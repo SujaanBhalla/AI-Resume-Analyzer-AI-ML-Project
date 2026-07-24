@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Resume Analyzer</title>
+
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+
+    <!-- Hero Section -->
+
+    <div class="hero">
+
+
+        <h1>
+            🤖 AI Resume Analyzer
+        </h1>
+
+
+        <p>
+            Upload your resume and get AI-powered analysis,
+            ATS score evaluation, skill insights,
+            and personalized career recommendations.
+        </p>
+
+
+    </div>
+
+
+
+
+
+    <!-- Upload Section -->
+
+
+    <div class="upload-card">
+
+
+        <h2>
+            📄 Upload Your Resume
+        </h2>
+
+
+        <p>
+            Upload your resume in PDF format to analyze your profile.
+        </p>
+
+
+
+        <form
+            action="/upload"
+            method="post"
+            enctype="multipart/form-data">
+
+
+
+            <input
+
+                type="file"
+
+                name="file"
+
+                accept=".pdf"
+
+                required>
+
+
+            <br><br>
+
+
+
+            <button type="submit">
+
+                🚀 Analyze Resume
+
+            </button>
+
+
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- Features Section -->
+
+
+    <div class="features">
+
+
+
+        <div class="feature-card">
+
+
+            <h3>
+                ⭐ ATS Score Analysis
+            </h3>
+
+
+            <p>
+
+                Analyze your resume compatibility
+                with Applicant Tracking Systems
+                and improve your chances of selection.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+        <div class="feature-card">
+
+
+            <h3>
+                💼 Career Prediction
+            </h3>
+
+
+            <p>
+
+                Get recommended career paths
+                based on your skills,
+                technologies, and profile.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+        <div class="feature-card">
+
+
+            <h3>
+                🧠 Skill Extraction
+            </h3>
+
+
+            <p>
+
+                Automatically detect technical skills
+                and identify your professional strengths.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+        <div class="feature-card">
+
+
+            <h3>
+                📈 Resume Improvement
+            </h3>
+
+
+            <p>
+
+                Receive AI-based suggestions
+                to improve your resume quality.
+
+            </p>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+
+
+    <footer>
+
+
+        <p>
+
+            Built using FastAPI • NLP • Machine Learning • AI
+
+        </p>
+
+
+    </footer>
+
+
+
+
+</div>
+
+
+
+
+<script src="/static/js/script.js"></script>
+
+
+
+</body>
+
+
+</html>
