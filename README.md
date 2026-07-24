@@ -68,7 +68,23 @@ Provides improvement suggestions such as:
 
 AI-Resume-Analyzer
 
-│ ├── main.py │ ├── app │   ├── parser.py │   ├── skill_extractor.py │   ├── ats.py │   └── career.py │ ├── templates │   ├── index.html │   └── result.html │ ├── static │   ├── css │   │   └── style.css │   │ │   └── js │       └── script.js │ ├── requirements.txt │ └── README.md
+│ ├── main.py
+│ ├── app
+│   ├── parser.py
+│   ├── skill_extractor.py 
+│   ├── ats.py 
+│   └── career.py 
+│ ├── templates 
+│   ├── index.html 
+│   └── result.html 
+│ ├── static │   
+├── css │   
+│   └── style.css 
+│   │ │   └── js 
+│       └── script.js 
+│ 
+├── requirements.txt 
+│ └── README.md
 
 ---
 
@@ -134,7 +150,7 @@ Resume Analysis Report
 
 ### 1. Clone Repository
 
-git clone https://github.com/your-username/AI-Resume-Analyzer.git
+git clone https://github.com/SujaanBhalla/AI-Resume-Analyzer.git
 
 2. Move into Project Folder
 
@@ -214,7 +230,7 @@ Cloud Deployment
 
 👨‍💻 Author
 
-SujAan Bhalla
+Sujaan Bhalla
 
 B.Tech Artificial Intelligence & Data Science Student
 
