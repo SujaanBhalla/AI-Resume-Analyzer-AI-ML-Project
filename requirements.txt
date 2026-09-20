@@ -3,3 +3,5 @@ uvicorn
 python-multipart
 pdfplumber
 jinja2
+streamlit
+requests
