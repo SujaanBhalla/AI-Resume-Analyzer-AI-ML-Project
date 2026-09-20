@@ -1,81 +1,62 @@
-# 🤖 AI Resume Analyzer
+🤖 AI Resume Analyzer
 
-An AI-powered web application that analyzes resumes and provides **ATS score analysis, skill extraction, career prediction, and resume improvement suggestions**.
+An AI-powered resume analysis application that helps users understand their resume through ATS score evaluation, skill extraction, career prediction, and resume improvement suggestions.
 
-## 🌐 Live Demo
+🌐 Live Demo
 
-**[🚀 Try AI Resume Analyzer](https://ai-resume-analyzer-92nj.onrender.com/)**
+🚀 Try AI Resume Analyzer
 
-## 📂 GitHub Repository
+🚧 Deployment platform may be updated as the project moves to Streamlit deployment.
 
-**[GitHub – AI Resume Analyzer](https://github.com/SujaanBhalla/AI-Resume-Analyzer)**
+📂 GitHub Repository
 
----
+GitHub – AI Resume Analyzer
 
-## ✨ Features
-
-* 📄 Upload and analyze PDF resumes
-* ⭐ ATS score analysis
-* 🧠 Automatic skill extraction
-* 💼 Career prediction
-* 📈 Resume improvement suggestions
-* 🔍 Resume content analysis
-* 🌐 FastAPI-based web application
-* 🎨 Simple and user-friendly interface
-
----
-
-## 🛠️ Technologies Used
-
-* **Python**
-* **FastAPI**
-* **NLP**
-* **Machine Learning**
-* **HTML**
-* **CSS**
-* **JavaScript**
-* **Jinja2**
-* **PDFPlumber**
-* **Uvicorn**
-
----
-
-## 📁 Project Structure
-
-```text
-AI-Resume-Analyzer/
+✨ Features
+📄 Upload and analyze PDF resumes
+⭐ ATS score analysis
+🧠 Automatic technical skill extraction
+💼 AI-based career prediction
+📊 Top career recommendations
+📈 Resume improvement suggestions
+🔍 Resume information extraction
+🎨 Modern and responsive Streamlit interface
+⚡ Fast and simple resume analysis workflow
+🛠️ Technologies Used
+Python
+Streamlit
+Natural Language Processing (NLP)
+Machine Learning
+PDFPlumber
+Regex-based Text Processing
+Pandas / NumPy
+Git & GitHub
+📁 Project Structure
+AI-Resume-Analyzer-AI-ML-Project/
 │
 ├── app/
+│   ├── parser.py
+│   ├── ats.py
+│   ├── career.py
+│   └── skill_extractor.py
 │
 ├── models/
 │
-├── static/
-│   ├── style.css
-│   └── script.js
+├── uploads/
 │
-├── templates/
-│   ├── index.html
-│   └── result.html
-│
-├── ats.py
-├── career.py
-├── parser.py
-├── skill_extractor.py
+├── streamlit_app.py
 ├── main.py
 │
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-```
 
----
+uploads/, virtual environments, Python cache files, and other local files are excluded from GitHub using .gitignore.
 
-## 🔄 How It Works
-
-```text
+🔄 How It Works
 Upload Resume (PDF)
         ↓
-   PDF Parsing
+   PDF Text Extraction
         ↓
 Resume Information Extraction
         ↓
@@ -83,87 +64,124 @@ Resume Information Extraction
         ↓
    ATS Score Analysis
         ↓
-  Career Prediction
+   Career Prediction
         ↓
-Resume Analysis Results
-```
+Resume Improvement Suggestions
+        ↓
+      Results
+🧠 Core Modules
+📄 Resume Parser
 
----
+Extracts readable text from uploaded PDF resumes and identifies:
 
-## 🚀 Run Locally
+Name
+Email
+Phone number
+Technical skills
+Resume text
+⭐ ATS Score
 
-### 1. Clone the repository
+Evaluates the resume using predefined resume-quality and keyword-based criteria to generate an ATS compatibility score.
 
-```bash
-git clone https://github.com/SujaanBhalla/AI-Resume-Analyzer.git
-```
+🧠 Skill Extractor
 
-### 2. Open the project
+Automatically identifies technical and professional skills from resume content using pattern-based text matching.
 
-```bash
-cd AI-Resume-Analyzer
-```
+💼 Career Prediction
 
-### 3. Install dependencies
+Matches extracted skills with predefined career profiles and provides:
 
-```bash
+Predicted career role
+Career match score
+Top career options
+Matched skills
+📈 Resume Suggestions
+
+Provides suggestions based on the extracted resume information and analysis results.
+
+🚀 Run Locally
+1. Clone the repository
+git clone https://github.com/SujaanBhalla/AI-Resume-Analyzer-AI-ML-Project.git
+2. Open the project
+cd AI-Resume-Analyzer-AI-ML-Project
+3. Create a virtual environment
+python -m venv venv
+4. Activate the virtual environment
+
+Windows PowerShell:
+
+venv\Scripts\Activate.ps1
+5. Install dependencies
 pip install -r requirements.txt
-```
+6. Run the Streamlit application
+streamlit run streamlit_app.py
+7. Open in browser
 
-### 4. Start the FastAPI server
+Streamlit will provide a local URL similar to:
 
-```bash
-uvicorn main:app --reload
-```
+http://localhost:8501
+☁️ Deployment
 
-### 5. Open in browser
+The application is designed for deployment using Streamlit Community Cloud.
 
-```text
-http://127.0.0.1:8000
-```
+Deployment Steps
+Push the project to GitHub.
+Open Streamlit Community Cloud.
+Connect the GitHub repository.
+Select streamlit_app.py as the main application file.
+Deploy the application.
+🎯 Project Objective
 
----
+The objective of this project is to develop an intelligent resume analysis system that helps users:
 
-## ☁️ Deployment
+Understand the quality of their resume
+Identify relevant technical skills
+Estimate ATS compatibility
+Discover suitable career paths
+Improve their resume presentation
 
-The application is deployed using **Render** and is publicly accessible through the live demo link.
+The project combines Python, NLP, text processing, and machine-learning concepts into a practical AI-based application.
 
-**Deployment Status:** ✅ Live
+🔮 Future Improvements
 
-**Platform:** Render
+Improve ATS scoring accuracy
 
-**Runtime:** Python 3
+Add job-description matching
 
----
+Add semantic similarity using NLP models
 
-## 🎯 Project Objective
+Improve career prediction using a trained ML model
 
-The objective of this project is to build an intelligent resume analysis system that helps users understand the effectiveness of their resumes, identify relevant skills, estimate ATS compatibility, and receive career-related insights.
+Add more career categories
 
----
+Add personalized resume recommendations
 
-## 🔮 Future Improvements
+Support DOCX resumes
 
-* [ ] Improve ATS scoring accuracy
-* [ ] Add more career categories
-* [ ] Add job-description matching
-* [ ] Improve NLP-based resume analysis
-* [ ] Add personalized resume recommendations
-* [ ] Enhance UI/UX
-* [ ] Add support for additional resume formats
+Improve resume section detection
 
----
+Add downloadable analysis reports
 
-## 👩‍💻 Author
+Enhance UI/UX
 
-**Sujaan Bhalla**
+Add resume keyword optimization
+
+Add real-time job-role matching
+
+📌 Project Status
+
+🚧 Actively Developed
+
+The core resume analysis workflow is implemented, including PDF parsing, skill extraction, ATS analysis, career prediction, and Streamlit-based frontend functionality.
+
+👩‍💻 Author
+
+Sujaan Bhalla
 
 B.Tech – Artificial Intelligence & Data Science
 
----
+⭐ If You Find This Project Useful
 
-## 📌 Project Status
+Feel free to ⭐ star the repository and explore the project.
 
-**✅ Completed and Deployed**
-
-The project is currently available as a live web application and can be accessed through the **Live Demo** link above.
+Built with Python, AI, NLP, and Machine Learning.
