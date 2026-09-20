@@ -1,245 +1,169 @@
-﻿
-
 # 🤖 AI Resume Analyzer
 
-An AI-powered Resume Analysis System that analyzes resumes, extracts important information, evaluates ATS compatibility, identifies technical skills, and predicts suitable career roles.
+An AI-powered web application that analyzes resumes and provides **ATS score analysis, skill extraction, career prediction, and resume improvement suggestions**.
 
-The project is built using **FastAPI, NLP, and Machine Learning concepts** to help users understand and improve their resumes.
+## 🌐 Live Demo
 
----
+**[🚀 Try AI Resume Analyzer](https://ai-resume-analyzer-92nj.onrender.com/)**
 
-## 🚀 Features
+## 📂 GitHub Repository
 
-### 📄 Resume Upload
-- Upload resume in PDF format
-- Extract resume content automatically
-- Process resume using NLP techniques
-
-### 👤 Resume Information Extraction
-Automatically extracts:
-
-- Name
-- Email
-- Phone Number
-- Technical Skills
-
-### 🛠 Skill Analysis
-Detects important technical skills such as:
-
-- Python
-- Java
-- C/C++
-- SQL
-- Git & GitHub
-- Pandas
-- NumPy
-- Excel
-- AWS
-- Linux
-
-### ⭐ ATS Score Analysis
-Evaluates resume compatibility based on:
-
-- Resume information completeness
-- Technical skills
-- Important keywords
-- Resume structure
-
-### 💼 Career Prediction
-Predicts suitable career roles based on detected skills.
-
-Example:
-
-- Data Analyst
-- Data Scientist
-- ML Engineer
-- Software Developer
-
-### 🤖 AI Resume Suggestions
-Provides improvement suggestions such as:
-
-- Add more project details
-- Mention measurable achievements
-- Update skills according to job roles
+**[GitHub – AI Resume Analyzer](https://github.com/SujaanBhalla/AI-Resume-Analyzer)**
 
 ---
 
-# 🏗️ Project Architecture
+## ✨ Features
 
-AI-Resume-Analyzer
-
-│ ├── main.py
-│ ├── app
-│   ├── parser.py
-│   ├── skill_extractor.py 
-│   ├── ats.py 
-│   └── career.py 
-│ ├── templates 
-│   ├── index.html 
-│   └── result.html 
-│ ├── static │   
-├── css │   
-│   └── style.css 
-│   │ │   └── js 
-│       └── script.js 
-│ 
-├── requirements.txt 
-│ └── README.md
+* 📄 Upload and analyze PDF resumes
+* ⭐ ATS score analysis
+* 🧠 Automatic skill extraction
+* 💼 Career prediction
+* 📈 Resume improvement suggestions
+* 🔍 Resume content analysis
+* 🌐 FastAPI-based web application
+* 🎨 Simple and user-friendly interface
 
 ---
 
-# ⚙️ Technologies Used
+## 🛠️ Technologies Used
 
-## Backend
-- Python
-- FastAPI
-
-## Frontend
-- HTML
-- CSS
-- JavaScript
-
-## Libraries
-- pdfplumber
-- Jinja2
-- NLP techniques
-- Regular Expressions
-
-## Tools
-- Git
-- GitHub
-- VS Code
+* **Python**
+* **FastAPI**
+* **NLP**
+* **Machine Learning**
+* **HTML**
+* **CSS**
+* **JavaScript**
+* **Jinja2**
+* **PDFPlumber**
+* **Uvicorn**
 
 ---
 
-# 🔄 Working Flow
+## 📁 Project Structure
 
+```text
+AI-Resume-Analyzer/
+│
+├── app/
+│
+├── models/
+│
+├── static/
+│   ├── style.css
+│   └── script.js
+│
+├── templates/
+│   ├── index.html
+│   └── result.html
+│
+├── ats.py
+├── career.py
+├── parser.py
+├── skill_extractor.py
+├── main.py
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 🔄 How It Works
+
+```text
 Upload Resume (PDF)
-
-↓
-
-PDF Text Extraction
-
-↓
-
-Resume Parsing
-
-↓
-
-Skill Extraction
-
-↓
-
-ATS Score Calculation
-
-↓
-
-Career Prediction
-
-↓
-
-AI Suggestions
-
-↓
-
-Resume Analysis Report
+        ↓
+   PDF Parsing
+        ↓
+Resume Information Extraction
+        ↓
+   Skill Extraction
+        ↓
+   ATS Score Analysis
+        ↓
+  Career Prediction
+        ↓
+Resume Analysis Results
+```
 
 ---
 
-# 📦 Installation & Setup
+## 🚀 Run Locally
 
-### 1. Clone Repository
+### 1. Clone the repository
 
+```bash
 git clone https://github.com/SujaanBhalla/AI-Resume-Analyzer.git
+```
 
-2. Move into Project Folder
+### 2. Open the project
 
+```bash
 cd AI-Resume-Analyzer
+```
 
-3. Create Virtual Environment
+### 3. Install dependencies
 
-python -m venv venv
-
-4. Activate Environment
-
-Windows:
-
-venv\Scripts\activate
-
-Linux/Mac:
-
-source venv/bin/activate
-
-5. Install Dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
-6. Run Application
+### 4. Start the FastAPI server
 
+```bash
 uvicorn main:app --reload
+```
 
+### 5. Open in browser
 
----
-
-🌐 Open Application
-
-Visit:
-
+```text
 http://127.0.0.1:8000
-
-
----
-
-📸 Application Output
-
-The system provides:
-
-Resume Details
-
-Extracted Skills
-
-ATS Score
-
-Career Prediction
-
-Resume Improvement Suggestions
-
-
+```
 
 ---
 
-🔮 Future Improvements
+## ☁️ Deployment
 
-Planned features:
+The application is deployed using **Render** and is publicly accessible through the live demo link.
 
-Job Description Matching
+**Deployment Status:** ✅ Live
 
-AI Resume Chatbot
+**Platform:** Render
 
-LLM-based Resume Feedback
-
-Advanced ATS Algorithm
-
-Resume Ranking System
-
-Cloud Deployment
-
-
+**Runtime:** Python 3
 
 ---
 
-👨‍💻 Author
+## 🎯 Project Objective
 
-Sujaan Bhalla
+The objective of this project is to build an intelligent resume analysis system that helps users understand the effectiveness of their resumes, identify relevant skills, estimate ATS compatibility, and receive career-related insights.
 
-B.Tech Artificial Intelligence & Data Science Student
+---
 
-Interested in:
+## 🔮 Future Improvements
 
-Artificial Intelligence
+* [ ] Improve ATS scoring accuracy
+* [ ] Add more career categories
+* [ ] Add job-description matching
+* [ ] Improve NLP-based resume analysis
+* [ ] Add personalized resume recommendations
+* [ ] Enhance UI/UX
+* [ ] Add support for additional resume formats
 
-Machine Learning
+---
 
-Data Science
+## 👩‍💻 Author
 
-MLOps
+**Sujaan Bhalla**
+
+B.Tech – Artificial Intelligence & Data Science
+
+---
+
+## 📌 Project Status
+
+**✅ Completed and Deployed**
+
+The project is currently available as a live web application and can be accessed through the **Live Demo** link above.
