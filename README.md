@@ -4,9 +4,9 @@ An AI-powered resume analysis application that helps users understand their resu
 
 ## 🌐 Live Demo
 
-**[🚀 Try AI Resume Analyzer](https://ai-resume-analyzer-92nj.onrender.com/)**
+**[🚀 Try AI Resume Analyzer](https://ai-resume-analyzer-ai-ml-project-rxkplbzprgfhxhbdyq8vj3.streamlit.app/)**
 
-> 🚧 Deployment platform may be updated as the project moves to Streamlit deployment.
+The application is publicly deployed using **Streamlit Community Cloud**.
 
 ## 📂 GitHub Repository
 
@@ -23,7 +23,7 @@ An AI-powered resume analysis application that helps users understand their resu
 * 📊 Top career recommendations
 * 📈 Resume improvement suggestions
 * 🔍 Resume information extraction
-* 🎨 Modern and responsive Streamlit interface
+* 🎨 Modern Streamlit interface
 * ⚡ Fast and simple resume analysis workflow
 
 ---
@@ -36,7 +36,6 @@ An AI-powered resume analysis application that helps users understand their resu
 * **Machine Learning**
 * **PDFPlumber**
 * **Regex-based Text Processing**
-* **Pandas / NumPy**
 * **Git & GitHub**
 
 ---
@@ -177,15 +176,17 @@ http://localhost:8501
 
 ## ☁️ Deployment
 
-The application is designed for deployment using **Streamlit Community Cloud**.
+The application is deployed using **Streamlit Community Cloud**.
 
-### Deployment Steps
+### 🚀 Live Application
 
-1. Push the project to GitHub.
-2. Open Streamlit Community Cloud.
-3. Connect the GitHub repository.
-4. Select `streamlit_app.py` as the main application file.
-5. Deploy the application.
+**[Open AI Resume Analyzer](https://ai-resume-analyzer-ai-ml-project-rxkplbzprgfhxhbdyq8vj3.streamlit.app/)**
+
+**Deployment Status:** ✅ Live
+
+**Platform:** Streamlit Community Cloud
+
+**Application:** `streamlit_app.py`
 
 ---
 
@@ -222,9 +223,9 @@ The project combines **Python, NLP, text processing, and machine-learning concep
 
 ## 📌 Project Status
 
-**🚧 Actively Developed**
+**✅ Live & Actively Developed**
 
-The core resume analysis workflow is implemented, including PDF parsing, skill extraction, ATS analysis, career prediction, and Streamlit-based frontend functionality.
+The core resume analysis workflow is implemented, including PDF parsing, skill extraction, ATS analysis, career prediction, resume improvement suggestions, and a publicly deployed Streamlit application.
 
 ---
 
